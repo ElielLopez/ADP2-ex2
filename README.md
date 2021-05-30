@@ -23,7 +23,7 @@ open chrome on "localhost:8080" <br/>
 Home page will be diplayed
 ![image](https://user-images.githubusercontent.com/58383829/120111157-861a3480-c179-11eb-8c9c-7c67715f07a2.png)
 
-choose alrotithm from the list:
+choose algorithm from the list:
 ![image](https://user-images.githubusercontent.com/58383829/120111194-ab0ea780-c179-11eb-9e66-461af9dfa7bd.png)
 
 choose a training file (the training file have to be CSV file) and click on the "Train!" button. <br/>
