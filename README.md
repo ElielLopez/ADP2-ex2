@@ -27,11 +27,12 @@ choose a training file (the training file have to be CSV file) and click on the 
 on chrome browser you will see the features names displaying on the screen (img1)
 
 choose a file you want to detect anomalies inside of it and click on the "Detect!" button.
-on chrome browser you will see the correlated features with their specifications. (img2)
+on chrome browser you will see the correlated features with their specifications (img2).
 
 
 img1:
 ![image](https://user-images.githubusercontent.com/58383829/120111274-faed6e80-c179-11eb-8fe9-780215ff8db3.png)
 
 img2:
+![image](https://user-images.githubusercontent.com/58383829/120113399-01ccaf00-c183-11eb-841a-7f25482f161c.png)
 
