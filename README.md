@@ -23,11 +23,11 @@ open chrome on "localhost:8080"
 choose alrotithm from the list:
 ![image](https://user-images.githubusercontent.com/58383829/120111194-ab0ea780-c179-11eb-9e66-461af9dfa7bd.png)
 
-choose a training file (the training file have to be CSV file) and click on the "Train!" button.
-on chrome browser you will see the features names displaying on the screen (img1)
+choose a training file (the training file have to be CSV file) and click on the "Train!" button. <br/>
+on chrome browser you will see the features names displaying on the screen (img1)<br/>
 
-choose a file you want to detect anomalies inside of it and click on the "Detect!" button.
-on chrome browser you will see the correlated features with their specifications (img2).
+choose a file you want to detect anomalies inside of it and click on the "Detect!" button. <br/>
+on chrome browser you will see the correlated features with their specifications (img2). <br/>
 
 
 img1:
