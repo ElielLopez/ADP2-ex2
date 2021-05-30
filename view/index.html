@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <h1>Anomaly Detection Server</h1> -->
+        <h1 style="color:rgb(148, 36, 13); font-size: 80px; background:rgb(240, 240, 235);">  Anomaly Detection Server</h1>
+    </head>
+
+    <body>
+        <form action="/trainCSVfile" method="POST" enctype="multipart/form-data" name="trainForm" target="train_result">
+            
+            <table style="background:rgb(235, 233, 216)  ; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+
+                <label for="AlgList" style="color:rgb(255, 69, 31); background:rgb(235, 233, 216)  ; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Select Algorithm:</label>
+                    <select name="AlgList" id="AlgList">
+                    <option value="1" id="Alg1" name="Regression">Regression</option>
+                    <option value="2" id="Alg2" name="Hybrid">Hybrid</option>
+                    </select>
+
+                <!-- <tr><td></td>
+                </tr> -->
+                <br>
+
+                <tr>
+                    <br>
+                    <li style="color:rgb(255, 69, 31) ;font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                        Please upload a csv file for trainig the model and press the "Train!" button
+                    </li>
+                </tr>
+                <br>
+
+                <tr style="color:rgb(255, 69, 31) ;font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><td><input type="file" name="train_file"></td>
+                    <td>קובץ אימון</td></tr>
+            </table>
+
+            <script>
+            document.getElementById("Alg1").style.color = "blue";
+            document.getElementById("Alg2").style.color = "blue";
+            </script>
+            <br>
+    
+            <input type="submit" value="Train!" style="color:rgb(221, 64, 33) ;font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        </form>
+        <br>
+        <iframe name="train_result" width="65%" height="30%"></iframe>
+
+
+        <form action="/detectAnomalies" method="POST" enctype="multipart/form-data" name="DetectForm" target="inv_result">
+            <table style="background:rgb(235, 233, 216)  ; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+                <tr><li style="color:rgb(255, 69, 31) ;font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    Please upload a csv file to detect anomalies and press the "Detect!" button
+                </li></tr>
+
+                <br>
+                <tr style="color:rgb(255, 69, 31) ;font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><td><input type="file" name="anomalies_file"></td>
+                    <td>קובץ חריגות</td></tr>
+            </table>
+            <br>
+    
+            <input type="submit" value="Detect!" style="color:rgb(221, 64, 33) ;font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        </form>
+        <br>
+        <iframe name="inv_result" width="65%" height="35%"></iframe>
+    </body>
+</html>
