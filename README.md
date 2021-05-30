@@ -8,7 +8,7 @@ download the 3 folders:
 * model
 * controller
 
-open CMD and change directory to controller folder
+open CMD and change directory to controller folder <br/>
 install:
 * npm init --yes
 * npm i express
