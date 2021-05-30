@@ -17,7 +17,10 @@ install:
 
 type "node expServer.js"
 
-open chrome on "localhost:8080"
+open chrome on "localhost:8080" <br/>
+![image](https://user-images.githubusercontent.com/58383829/120113472-46f0e100-c183-11eb-814b-1bff7b5af9d9.png)
+
+Home page will be diplayed
 ![image](https://user-images.githubusercontent.com/58383829/120111157-861a3480-c179-11eb-8c9c-7c67715f07a2.png)
 
 choose alrotithm from the list:
